@@ -56,6 +56,7 @@ The following network visualizations show the semantic relationships and structu
 <p align="center">
   <img src="layer_24.png" alt="Network visualization at Layer 24" width="700">
 </p>
+
 **Figure 6. Residue-level graph visualization of ProtT5 attention across representative layers for the 6A0W sequence.** Weighted residue-level graphs were derived from ProtT5 attention matrices. Nodes correspond to residues; edges represent attention-derived contextual associations; edge thickness is proportional to attention weight; node colors indicate embedding-based clusters; and node size reflects betweenness centrality. The observed topology changes across layers: Layer 3 is dominated by mostly local connectivity; Layers 12 and 16 show increased centralization and hub formation; and Layers 20 and 24 display more modular organization, with bridge residues connecting separate clusters. These patterns suggest that ProtT5 progressively reorganizes residue-level information from local contextual dependencies toward a more globally structured representation.
 
 ---
