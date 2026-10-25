@@ -8,14 +8,21 @@ This repository contains the core implementation scripts, pipelines, and visual 
 
 The study has two complementary components:
 
-1. **Layer-wise Diagnostic & Interpretability Advisor:** We systematically probe intermediate transformer layers across modern protein language models (ESM-2, ProtT5, and ProtBERT). By evaluating challenging protein pairs exhibiting high sequence similarity yet structural divergence, this framework serves as an interpretive and diagnostic aid to examine how internal representations balance sequence fidelity versus 3D topological preservation; it is not intended as a general-purpose alignment benchmark or black-box predictor.
+<div align="justify">
 
-2. **Semantic Coloring & Visualization Framework:** We propose a structure-informed visualization paradigm that translates high-dimensional per-residue embeddings into perceptual CIELAB colors through a three-stage pipeline:
-   - **Fuzzy Clustering:** Grouping per-residue embeddings into latent clusters using Fuzzy C-Means.
-   - **Cluster-Center Optimization:** Mapping and optimizing only the cluster centroids into the CIELAB color space via NSGA-III multi-objective optimization to guarantee maximal perceptual contrast and rank-order distance preservation.
-   - **Color Propagation:** Calculating the continuous color of every individual residue as a weighted combination of cluster centroid colors, driven by its fuzzy membership degrees.
-   
-   This enables intuitive, residue-level visual inspection of functional and structural properties beyond classical monochrome alignments.
+1. **Layer-wise Diagnostic & Interpretability Advisor:** 
+We propose an interpretable framework to systematically probe intermediate transformer layers across modern protein language models (ESM-2, ProtT5, and ProtBERT). As a representative use case, we evaluate challenging protein pairs exhibiting high sequence similarity yet low structural similarity (structural divergence). This setup enables us to diagnose and visualize how internal representations balance sequence fidelity versus 3D structural preservation across layers—identifying which layers capture sequence-dominant information, which capture structural features, and which achieve an optimal trade-off between both. This framework is designed as an interpretive and diagnostic aid, not as a general-purpose alignment benchmark or black-box predictor.
+
+2. **Semantic Coloring & Visualization Framework:** 
+We propose a structure-informed visualization paradigm that translates high-dimensional per-residue embeddings into perceptual CIELAB colors through a three-stage pipeline:
+<ul>
+  <li><b>Fuzzy Clustering:</b> Grouping per-residue embeddings into latent clusters using Fuzzy C-Means.</li>
+  <li><b>Cluster-Center Optimization:</b> Mapping and optimizing only the cluster centroids into the CIELAB color space via NSGA-III multi-objective optimization to guarantee maximal perceptual contrast and rank-order distance preservation.</li>
+  <li><b>Color Propagation:</b> Calculating the continuous color of every individual residue as a weighted combination of cluster centroid colors, driven by its fuzzy membership degrees.</li>
+</ul>
+This enables intuitive, residue-level visual inspection of functional and structural properties beyond classical monochrome alignments.
+
+</div>
 
 ---
 
