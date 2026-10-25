@@ -82,7 +82,7 @@ These visualizations effectively illustrate how the internal network topology an
 <div align="justify">
 <b>Residue-level graph visualization of ProtT5 attention across representative layers for the 6A0W sequence.</b> Weighted residue-level graphs were derived from ProtT5 attention matrices. Nodes correspond to residues; edges represent attention-derived contextual associations; edge thickness is proportional to attention weight; node colors indicate embedding-based clusters; and node size reflects betweenness centrality. The observed topology changes across layers: Layer 3 is dominated by mostly local connectivity; Layers 12 and 16 show increased centralization and hub formation; and Layers 20 and 24 display more modular organization, with bridge residues connecting separate clusters. These patterns suggest that ProtT5 progressively reorganizes residue-level information from local contextual dependencies toward a more globally structured representation.
 </div>
----
+
 
 ## 📂 Repository Structure
 
@@ -102,7 +102,7 @@ These visualizations effectively illustrate how the internal network topology an
      - Performs Smith-Waterman alignment on semantic colors with CIEDE2000 scoring.
      - Optimizes color thresholds via **Bayesian Optimization** on the training set.
 
----
+
 
 ## 📋 Citation
 
