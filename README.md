@@ -38,9 +38,22 @@ The end-to-end framework mapping layer embeddings into optimized perceptual colo
 
 ---
 
+<div align="justify">
+
 ## 📊 Layer-wise Network Visualizations
 
-The following network visualizations show the semantic relationships and structural alignments obtained at five selected model layers (**Layers 3, 12, 16, 20, and 24**). They illustrate how the network representation evolves across the model depth.
+The following network visualizations display the residue-level graphs derived from ProtT5 attention matrices across five representative model layers (<b>Layers 3, 12, 16, 20, and 24</b>) for the <b>6A0W</b> protein sequence. 
+
+In these graphs:
+<ul>
+  <li><b>Nodes</b> represent individual amino acid residues.</li>
+  <li><b>Edges</b> denote contextual associations, where edge weights correspond directly to the attention weights between residue pairs in the ProtT5 model.</li>
+  <li><b>Node colors</b> indicate embedding-based semantic clusters.</li>
+  <li><b>Node sizes</b> reflect betweenness centrality.</li>
+</ul>
+These visualizations effectively illustrate how the internal network topology and connectivity evolve across the model's depth.
+
+</div>
 
 ### Layer 3
 <p align="center">
