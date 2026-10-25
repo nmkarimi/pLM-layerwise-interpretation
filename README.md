@@ -2,7 +2,7 @@
 
 This repository contains the core implementation scripts, pipelines, and visual examples associated with our study on layer-wise protein language model (pLM) representations and semantic visualization.
 
----
+
 
 ## 🔬 Overview & Contributions
 
@@ -24,7 +24,7 @@ This enables intuitive, residue-level colored visualization to effectively inspe
 
 </div>
 
----
+
 
 ## 🎨 Semantic Coloring Pipeline
 
