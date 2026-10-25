@@ -1,6 +1,6 @@
 # Layer-wise Topological Interpretation of Protein Language Models through Semantic Visualization
 
-This repository contains the core implementation scripts, pipelines, and visual examples associated with our study on layer-wise protein language model (pLM) representations and semantic visualization in the twilight zone.
+This repository contains the core implementation scripts, pipelines, and visual examples associated with our study on layer-wise protein language model (pLM) representations and semantic visualization.
 
 ---
 
