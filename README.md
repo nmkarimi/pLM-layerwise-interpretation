@@ -20,7 +20,7 @@ We propose a structure-informed visualization paradigm that translates high-dime
   <li><b>Cluster-Center Optimization:</b> Mapping and optimizing only the cluster centroids into the CIELAB color space via NSGA-III multi-objective optimization to guarantee maximal perceptual contrast and rank-order distance preservation.</li>
   <li><b>Color Propagation:</b> Calculating the continuous color of every individual residue as a weighted combination of cluster centroid colors, driven by its fuzzy membership degrees.</li>
 </ul>
-This enables intuitive, residue-level visual inspection of functional and structural properties beyond classical monochrome alignments.
+This enables intuitive, residue-level colored visualization to effectively inspect and interpret the internal representations of protein language models.
 
 </div>
 
