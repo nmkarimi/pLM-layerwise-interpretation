@@ -8,11 +8,14 @@ This repository contains the core implementation scripts, pipelines, and visual 
 
 The study has two complementary components:
 
-1. **Layer-wise Diagnostic & Interpretability Advisor:** 
-   We systematically probe intermediate transformer layers across modern protein language models (ESM-2, ProtT5, and ProtBERT). This framework is designed as an interpretive and diagnostic aid to examine how representations balance sequence fidelity versus 3D topological preservation; it is not a general-purpose prediction method or alignment benchmark.
+1. **Layer-wise Diagnostic & Interpretability Advisor:** We systematically probe intermediate transformer layers across modern protein language models (ESM-2, ProtT5, and ProtBERT). By evaluating challenging protein pairs exhibiting high sequence similarity yet structural divergence, this framework serves as an interpretive and diagnostic aid to examine how internal representations balance sequence fidelity versus 3D topological preservation; it is not intended as a general-purpose alignment benchmark or black-box predictor.
 
-2. **Semantic Coloring & Visualization Framework:** 
-   We propose a structure-informed visualization paradigm that translates high-dimensional per-residue embeddings into perceptual CIELAB colors using Fuzzy C-Means and NSGA-III multi-objective optimization. This enables intuitive, residue-level visual inspection of functional/structural conservation beyond classical monochrome alignments.
+2. **Semantic Coloring & Visualization Framework:** We propose a structure-informed visualization paradigm that translates high-dimensional per-residue embeddings into perceptual CIELAB colors through a three-stage pipeline:
+   - **Fuzzy Clustering:** Grouping per-residue embeddings into latent clusters using Fuzzy C-Means.
+   - **Cluster-Center Optimization:** Mapping and optimizing only the cluster centroids into the CIELAB color space via NSGA-III multi-objective optimization to guarantee maximal perceptual contrast and rank-order distance preservation.
+   - **Color Propagation:** Calculating the continuous color of every individual residue as a weighted combination of cluster centroid colors, driven by its fuzzy membership degrees.
+   
+   This enables intuitive, residue-level visual inspection of functional and structural properties beyond classical monochrome alignments.
 
 ---
 
