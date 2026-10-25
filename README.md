@@ -34,9 +34,9 @@ The end-to-end framework mapping layer embeddings into optimized perceptual colo
   <img src="pipeline.png" alt="Semantic Coloring Pipeline" width="850"/>
 </p>
 <div align="justify">
-The semantic coloring pipeline consists of three main stages: (1) <b>Clustering:</b> Application of fuzzy clustering on embedding vectors to identify latent structures; (2) <b>Coloring:</b> Optimization of cluster centers in the CIELAB color space, constrained by rank-order preservation and visual contrast requirements; and (3) **Color Propagation:** Final assignment of color values to all data points based on their respective membership degrees to the optimized clusters.
+The semantic coloring pipeline consists of three main stages: (1) <b>Clustering:</b> Application of fuzzy clustering on embedding vectors to identify latent structures; (2) <b>Coloring:</b> Optimization of cluster centers in the CIELAB color space, constrained by rank-order preservation and visual contrast requirements; and (3) <b>Color Propagation:</b> Final assignment of color values to all data points based on their respective membership degrees to the optimized clusters.
 </div>
----
+
 
 <div align="justify">
 
