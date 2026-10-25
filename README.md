@@ -33,9 +33,9 @@ The end-to-end framework mapping layer embeddings into optimized perceptual colo
 <p align="center">
   <img src="pipeline.png" alt="Semantic Coloring Pipeline" width="850"/>
 </p>
-
+<div align="justify">
 The semantic coloring pipeline consists of three main stages: (1) **Clustering:** Application of fuzzy clustering on embedding vectors to identify latent structures; (2) **Coloring:** Optimization of cluster centers in the CIELAB color space, constrained by rank-order preservation and visual contrast requirements; and (3) **Color Propagation:** Final assignment of color values to all data points based on their respective membership degrees to the optimized clusters.
-
+</div>
 ---
 
 <div align="justify">
@@ -79,9 +79,9 @@ These visualizations effectively illustrate how the internal network topology an
 <p align="center">
   <img src="layer_24.png" alt="Network visualization at Layer 24" width="700">
 </p>
-
+<div align="justify">
 **Residue-level graph visualization of ProtT5 attention across representative layers for the 6A0W sequence.** Weighted residue-level graphs were derived from ProtT5 attention matrices. Nodes correspond to residues; edges represent attention-derived contextual associations; edge thickness is proportional to attention weight; node colors indicate embedding-based clusters; and node size reflects betweenness centrality. The observed topology changes across layers: Layer 3 is dominated by mostly local connectivity; Layers 12 and 16 show increased centralization and hub formation; and Layers 20 and 24 display more modular organization, with bridge residues connecting separate clusters. These patterns suggest that ProtT5 progressively reorganizes residue-level information from local contextual dependencies toward a more globally structured representation.
-
+</div>
 ---
 
 ## 📂 Repository Structure
